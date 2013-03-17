@@ -1,0 +1,8 @@
+@CHARSET "UTF-8";
+
+div.heading
+{
+	text-align: left;
+	font-size: 5ex;
+	padding-bottom: 10px;
+}
