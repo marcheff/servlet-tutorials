@@ -33,6 +33,29 @@ public class MyFirstServlet extends HttpServlet {
 		PrintWriter writer = response.getWriter();
 		
 		writer.println("<b>My first servlet output :)</b><br />");
+		
+		if (request.getParameterMap().size() > 0)
+		{
+	        writer.println("The passed GET parameters are:<br />");
+	        writer.println("<ul>");
+		    for (String currentParamKey : request.getParameterMap().keySet())
+		    {
+		        writer.println("<li>");
+		        writer.append(currentParamKey);
+		        writer.append(" -> { ");
+		        
+		        String[] paramValues = request.getParameterMap().get(currentParamKey);
+		        for (int i = 0; i < paramValues.length; i++)
+		        {
+		            writer.append(paramValues[i] + ", ");
+		        }
+		        
+		        writer.append("}");
+		        writer.println("</li>");
+		    }
+            writer.println("</ul>");
+		}
+		
 		writer.println("<a href=\"/HelloJavaWebWorld\">Go back</a>");
 		
 		DummyUtils.sayHello();
