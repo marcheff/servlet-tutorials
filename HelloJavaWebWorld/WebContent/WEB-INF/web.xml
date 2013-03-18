@@ -4,4 +4,14 @@
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
   </welcome-file-list>
+  
+  <servlet>
+ 	<servlet-name>secondServlet</servlet-name>
+ 	<servlet-class>biz.dreambox.tutorials.servlets.SecondServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>secondServlet</servlet-name>
+  	<url-pattern>/SecondServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
