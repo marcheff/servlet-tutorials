@@ -3,6 +3,9 @@
     <wb-module deploy-name="HelloJavaWebWorld">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <dependent-module archiveName="MyDummyUtils.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/MyDummyUtils/MyDummyUtils">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="java-output-path" value="/SimpleServletProject/build/classes"/>
         <property name="context-root" value="HelloJavaWebWorld"/>
     </wb-module>

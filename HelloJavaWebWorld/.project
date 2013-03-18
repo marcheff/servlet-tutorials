@@ -3,6 +3,7 @@
 	<name>HelloJavaWebWorld</name>
 	<comment></comment>
 	<projects>
+		<project>MyDummyUtils</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
