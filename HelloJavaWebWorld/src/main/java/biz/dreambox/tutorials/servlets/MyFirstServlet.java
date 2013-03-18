@@ -9,6 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import biz.dreambox.utils.DummyUtils;
+
 /**
  * Servlet implementation class MyFirstServlet
  */
@@ -32,6 +34,8 @@ public class MyFirstServlet extends HttpServlet {
 		
 		writer.println("<b>My first servlet output :)</b><br />");
 		writer.println("<a href=\"/HelloJavaWebWorld\">Go back</a>");
+		
+		DummyUtils.sayHello();
 	}
 
 }
